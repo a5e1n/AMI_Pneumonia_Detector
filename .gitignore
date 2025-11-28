@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.so
+*.dylib
+*.pkl
+*.h5
+models/*.h5
+models/*.keras
