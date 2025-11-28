@@ -4,7 +4,3 @@ __pycache__/
 .DS_Store
 *.so
 *.dylib
-*.pkl
-*.h5
-models/*.h5
-models/*.keras
