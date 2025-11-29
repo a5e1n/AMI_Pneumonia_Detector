@@ -161,3 +161,11 @@ st.markdown("""
     <h3>✨ More upgrades will continue as AMI evolves.</h3>
 </div>
 """, unsafe_allow_html=True)
+
+st.write("---")
+
+# Footer
+st.markdown(
+    "<p style='text-align:center; color:#777;'>© AMI — Ameen Medical Intelligence.</p>",
+    unsafe_allow_html=True
+)

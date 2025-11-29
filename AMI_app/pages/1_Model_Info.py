@@ -80,7 +80,7 @@ st.markdown(
     <ul style='color:#ccc; font-size:17px; line-height:1.8;'>
         <li><b>NORMAL:</b> 1,340 images</li>
         <li><b>PNEUMONIA:</b> 3,875 images</li>
-        <li><b>NOT_XRAY:</b> 1,583 images</li>
+        <li><b>NOT_XRAY:</b> 5,000 images</li>
     </ul>
     """,
     unsafe_allow_html=True
