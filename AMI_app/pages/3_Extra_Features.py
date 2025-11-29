@@ -1,58 +1,163 @@
 import streamlit as st
 from app_config import set_page_style
 
+# Apply styling
 set_page_style()
 
-st.markdown(
-    """
-    <h1 style='text-align:center; color:#0da6a6;'>🛠 Extra Features & Future Improvements</h1>
-    """,
-    unsafe_allow_html=True
-)
+# =============================== 
+#   PAGE TITLE
+# ===============================
+st.markdown("""
+<div style='text-align:center; padding:20px;'>
+    <h1 style='color:#00e6e6;'>🔧 Extra Features & Future Enhancements</h1>
+    <p style='color:#cccccc;'>Overview of current system capabilities and upcoming improvements</p>
+</div>
+""", unsafe_allow_html=True)
 
-st.write("")
 
-# ----------------- CURRENT EXTRA FEATURES -----------------
-st.markdown(
-    """
-    <h3 style='color:#0da6a6;'>✨ Current Extra Features</h3>
+# =============================== 
+#   IMPLEMENTED FEATURES
+# ===============================
+st.markdown("""
+## ✅ Implemented Features (Completed)
 
-    <ul style='color:#ccc; font-size:17px; line-height:1.8;'>
-        <li><b>Non-X-Ray Detection:</b> The model includes a dedicated NOT_XRAY class to prevent incorrect predictions on random images.</li>
-        <li><b>Confidence Score:</b> Shows how certain the model is about each prediction.</li>
-        <li><b>User-Friendly Interface:</b> Dark mode UI with centered controls and smooth animations.</li>
-        <li><b>Error Handling:</b> Safely rejects images that are too small, corrupted, or not medical in nature.</li>
-    </ul>
-    """,
-    unsafe_allow_html=True
-)
+### 🔹 1. Automated PDF Medical Report  
+A fully generated medical-style PDF including:
+- Diagnosis & model confidence  
+- Class probability distribution  
+- Original X-ray image  
+- Grad-CAM heatmap  
+- Hospital-style header & footer  
+- QR verification code  
+- Professional formatting  
 
-st.write("---")
+This feature is **fully implemented and active**.
 
-# ----------------- FUTURE IMPROVEMENTS -----------------
-st.markdown(
-    """
-    <h3 style='color:#0da6a6;'>🚀 Future Enhancements</h3>
+---
 
-    <ul style='color:#ccc; font-size:17px; line-height:1.8;'>
-        <li><b>Multi-Disease Diagnosis:</b> Expand the model to detect additional chest conditions such as COVID-19, fibrosis, tuberculosis, and lung nodules.</li>
-        <li><b>Noise-Robust Training:</b> Improve generalization by training on noisy, blurred, and low-quality X-rays collected from real hospital sources.</li>
-        <li><b>Grad-CAM Heatmaps:</b> Visual explanation showing which regions of the lung contributed most to the prediction.</li>
-        <li><b>Cloud Deployment:</b> Host the system on a secure cloud platform (AWS/GCP/Azure) for real-clinic accessibility.</li>
-        <li><b>Mobile App Version:</b> Develop an Android/iOS version for fast diagnosis directly from smartphones.</li>
-        <li><b>DICOM Support:</b> Add support for hospital-grade DICOM images and PACS integration.</li>
-        <li><b>Automatic Report Generation:</b> Produce a PDF medical report containing diagnosis, confidence, and heatmap visualization.</li>
-        <li><b>Database Logging:</b> Save anonymized cases for continuous improvement through retraining.</li>
-        <li><b>Real-Time API:</b> Build an API endpoint for integrating the model into other systems or hospital dashboards.</li>
-    </ul>
-    """,
-    unsafe_allow_html=True
-)
+### 🔹 2. AI Focus Visualization (Grad-CAM)
+The system highlights lung regions most responsible for the prediction, improving:
+- Model interpretability  
+- Diagnostic trust  
+- Clinical transparency  
 
-st.write("---")
+---
 
-# ----------------- FOOTER -----------------
-st.markdown(
-    "<p style='text-align:center; color:#777;'>© AMI — Ameen Medical Intelligence.</p>",
-    unsafe_allow_html=True
-)
+### 🔹 3. Class Probability Breakdown  
+The system outputs a complete probability distribution for:
+- NORMAL  
+- PNEUMONIA  
+- NOT_XRAY  
+
+---
+
+### 🔹 4. Diagnosis Card with Animated Glow  
+A medical-themed glowing diagnosis box that changes color depending on:
+- Green → Normal  
+- Red → Pneumonia  
+- Orange → Not X-ray  
+
+Fully animated + responsive.
+
+---
+
+### 🔹 5. Modern UI/UX + Responsive Layout  
+- Centered images  
+- Clean interface  
+- Centered action buttons  
+- Styled sidebar & buttons  
+- Improved readability on desktop and mobile  
+
+---
+
+### 🔹 6. Direct GitHub → Streamlit Cloud Deployment  
+The app is fully connected to GitHub for:
+- Auto deployment  
+- Live updates  
+- Version control  
+
+--- 
+
+""")
+
+# =============================== 
+#   FUTURE ENHANCEMENTS
+# ===============================
+st.markdown("""
+## 🚀 Future Enhancements (Planned)
+
+### 🔸 1. Multi-Disease Chest X-Ray Model  
+Expanding detection beyond pneumonia:
+- COVID-19  
+- Tuberculosis  
+- Lung cancer nodules  
+- Atelectasis  
+- Pleural effusion  
+
+This upgrade transforms the system into a **multi-diagnostic radiology assistant**.
+
+---
+
+### 🔸 2. Interactive Heatmap Controls  
+Upcoming additions:
+- Adjustable heatmap intensity  
+- Toggle between: Original / Heatmap / Overlay  
+- Side-by-side comparison view  
+
+---
+
+### 🔸 3. Patient Case History Module  
+Allowing users to:
+- Save each case  
+- Review previous reports  
+- Track patient improvements  
+- Export multiple PDFs at once  
+
+---
+
+### 🔸 4. Physician Dashboard  
+A more advanced mode for doctors:
+- Batch X-ray uploads  
+- Statistics & analytics  
+- High-contrast radiology theme  
+- Secure login (OAuth)  
+
+---
+
+### 🔸 5. Mobile-First UI Optimization  
+Full support for:
+- All iPhone/Android screen sizes  
+- Better spacing + scaling  
+- Touch-friendly buttons  
+- Faster X-ray rendering  
+
+---
+
+### 🔸 6. Model Confidence Calibration  
+Improving reliability of model output through:
+- Temperature scaling  
+- Softmax calibration  
+- ROC-AUC evaluation  
+- Better training dataset balance  
+
+---
+
+### 🔸 7. Future Integration with Hospital PACS  
+Planned PACS support:
+- Upload directly from hospital systems  
+- Secure DICOM handling  
+- Encrypted transfer  
+- Hospital-ready workflow  
+
+---
+
+""")
+
+# =============================== 
+#   FOOTER
+# ===============================
+st.markdown("""
+<div style='text-align:center; padding:30px; color:#00e6e6;'>
+    <h3>✨ More upgrades will continue as AMI evolves.</h3>
+</div>
+""", unsafe_allow_html=True)
