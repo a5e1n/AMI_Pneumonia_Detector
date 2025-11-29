@@ -65,7 +65,7 @@ img {
 # ===============================
 st.markdown("""
 <h1 class='fade fade-1' style='text-align:center; color:#0da6a6;'>
-    👨‍💻 About the Developer
+    👨🏻‍💻 About the Developer
 </h1>
 """, unsafe_allow_html=True)
 
