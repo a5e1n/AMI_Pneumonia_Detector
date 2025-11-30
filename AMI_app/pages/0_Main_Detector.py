@@ -495,7 +495,7 @@ st.write("---")
 c1, c2, c3 = st.columns([1, 1, 1])
 with c2:
     if os.path.exists("AMI_app/static/ami_logo.png"):
-        st.image("AMI_app/static/ami_logo.png", width=220)
+        st.image("AMI_app/static/ami_logo.png")
 
 st.markdown(
     "<p style='text-align:center; color:#777;'>© AMI — Ameen Medical Intelligence.</p>",
