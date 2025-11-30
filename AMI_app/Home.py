@@ -31,19 +31,13 @@ center_row = st.columns([1,2,1])
 with center_row[1]:
     logos = st.columns([1,1])
 
-with logos[0]:
-    st.markdown("""
-        <img src='/mount/src/ami_pneumonia_detector/AMI_app/static/university_logo.png'
-             style='width:110px; object-fit:contain; display:block; margin:auto;'/>
-    """, unsafe_allow_html=True)
+    with logos[0]:
+        if os.path.exists("AMI_app/static/university_logo.png"):
+            st.image("AMI_app/static/university_logo.png")
 
-
-with logos[1]:
-    st.markdown("""
-        <img src='/mount/src/ami_pneumonia_detector/AMI_app/static/ami_logo.png'
-             style='width:130px; object-fit:contain; display:block; margin:auto;'/>
-    """, unsafe_allow_html=True)
-
+    with logos[1]:
+        if os.path.exists("AMI_app/static/ami_logo.png"):
+            st.image("AMI_app/static/ami_logo.png")
 
 st.markdown(
     "<p style='text-align:center; color:#bbb;'>© AMI — Ameen Medical Intelligence.</p>",
