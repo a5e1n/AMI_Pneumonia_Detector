@@ -149,6 +149,14 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.write("---")
+st.markdown("""
+<div style='text-align:center; padding:30px; color:#00e6e6;'>
+    <h3>✨ Entirely developed and engineered by Ameen Ali — Founder & Lead Developer of AMI.
+This project represents a fully independent effort from concept to deployment.</h3>
+</div>
+""", unsafe_allow_html=True)
+
+st.write("---")
 
 # ===============================
 #         SOCIAL ICONS — CLEAN
@@ -210,13 +218,6 @@ with col4:
         <p style="color:#aaa; font-size:14px; margin-top:-2px;">Profile</p>
     </div>
     """, unsafe_allow_html=True)
-
-st.markdown("""
-<div style='text-align:center; padding:30px; color:#00e6e6;'>
-    <h3>✨ Entirely developed and engineered by Ameen Ali — Founder & Lead Developer of AMI.
-This project represents a fully independent effort from concept to deployment.</h3>
-</div>
-""", unsafe_allow_html=True)
 
 st.write("---")
 
