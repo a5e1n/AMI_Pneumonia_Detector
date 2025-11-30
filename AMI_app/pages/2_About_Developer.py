@@ -150,31 +150,45 @@ st.markdown("""
 
 st.write("---")
 
-st.markdown(
-    """
-    <style>
-        .dev-box {
-            background-color: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            padding: 25px 30px;
-            border-radius: 12px;
-            margin: 20px auto;
-            max-width: 900px;
-            text-align: left;
-            line-height: 1.7;
-            font-size: 20px;
-            color: #e6e6e6;
-            backdrop-filter: blur(3px);
-        }
-    </style>
+st.markdown("""
+<style>
+.glass-box {
+    margin: 40px auto;
+    padding: 28px 35px;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.06); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+}
+.glass-text {
+    color: #e6e6e6;
+    font-size: 20px;
+    line-height: 1.65;
+    font-weight: 500;
+}
+.glass-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffd95e;
+    margin-bottom: 12px;
+}
+</style>
 
-    <div class="dev-box">
-    ✨ <strong>Entirely developed and engineered by Ameen Ali</strong> — Founder & Lead Developer of AMI (Ameen Medical Intelligence).<br><br>
-        This project represents a fully independent effort, built from the ground up including research, dataset preparation, neural-network training, evaluation, optimization, deployment, and UI/UX development.
+<div class="glass-box">
+    <div class="glass-title">✨ Independently Developed by Ameen Ali</div>
+    <div class="glass-text">
+        This project was entirely designed, engineered, and built by Ameen Ali — 
+        Founder & Lead Developer of AMI (Ameen Medical Intelligence).  
+        <br><br>
+        It represents a fully independent end-to-end effort:  
+        including research, dataset preparation, neural-network training, 
+        evaluation, optimization, deployment, UI/UX development, and system integration.
     </div>
-    """,
-    unsafe_allow_html=True
-)
+</div>
+""", unsafe_allow_html=True)
 
 st.write("---")
 
