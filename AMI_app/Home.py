@@ -31,20 +31,13 @@ center_row = st.columns([1,2,1])
 with center_row[1]:
     logos = st.columns([1,1])
 
-from PIL import Image
+    with logos[0]:
+        if os.path.exists("AMI_app/static/university_logo.png"):
+            st.image("AMI_app/static/university_logo.png")
 
-with logos[0]:
-    uni_path = "AMI_app/static/university_logo.png"
-    if os.path.exists(uni_path):
-        uni_img = Image.open(uni_path)
-        st.image(uni_img, width=110)   # حجم صغير بدون فقد الجودة
-
-with logos[1]:
-    ami_path = "AMI_app/static/ami_logo.png"
-    if os.path.exists(ami_path):
-        ami_img = Image.open(ami_path)
-        st.image(ami_img, width=150)   # حجم مناسب وبجودة عالية
-
+    with logos[1]:
+        if os.path.exists("AMI_app/static/ami_logo.png"):
+            st.image("AMI_app/static/ami_logo.png")
 
 st.markdown(
     "<p style='text-align:center; color:#bbb;'>© AMI — Ameen Medical Intelligence.</p>",
