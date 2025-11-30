@@ -149,14 +149,31 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.write("---")
-st.markdown("""
-<div style='text-align:center; padding:30px; color:#00e6e6;'>
-    <h3>✨ Entirely developed and engineered by Ameen Ali — Founder & Lead Developer of AMI.
-This project represents a fully independent effort from concept to deployment.</h3>
-</div>
-""", unsafe_allow_html=True)
+
+st.markdown(
+    """
+    <style>
+        .dev-note {
+            text-align: left;
+            padding: 25px;
+            margin: 10px auto;
+            max-width: 900px;
+            line-height: 1.7;
+            font-size: 20px;
+            color: #e6e6e6;
+        }
+    </style>
+
+    <div class="dev-note">
+        ✨ <strong>Entirely developed and engineered by Ameen Ali</strong> — Founder & Lead Developer of AMI (Ameen Medical Intelligence).<br>
+        This project represents a fully independent effort, built from the ground up from concept, research, and dataset preparation, all the way to model training, evaluation, deployment, and UI/UX development.
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 st.write("---")
+
 
 # ===============================
 #         SOCIAL ICONS — CLEAN
