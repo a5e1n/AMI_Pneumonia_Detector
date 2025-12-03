@@ -33,7 +33,7 @@ with center_row[1]:
 
     with logos[0]:
         if os.path.exists("AMI_app/static/university_logo.png"):
-            st.image("AMI_app/static/university_logo.png", width=108)
+            st.image("AMI_app/static/university_logo.png", width=110)
 
     with logos[1]:
         if os.path.exists("AMI_app/static/ami_logo.png"):
