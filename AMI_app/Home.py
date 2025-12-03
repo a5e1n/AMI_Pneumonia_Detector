@@ -33,11 +33,11 @@ with center_row[1]:
 
     with logos[0]:
         if os.path.exists("AMI_app/static/university_logo.png"):
-            st.image("AMI_app/static/university_logo.png")
+            st.image("AMI_app/static/university_logo.png", width=140)
 
     with logos[1]:
         if os.path.exists("AMI_app/static/ami_logo.png"):
-            st.image("AMI_app/static/ami_logo.png")
+            st.image("AMI_app/static/ami_logo.png", width=140)
 
 st.markdown(
     "<p style='text-align:center; color:#bbb;'>© AMI — Ameen Medical Intelligence.</p>",
