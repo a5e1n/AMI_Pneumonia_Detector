@@ -26,18 +26,23 @@ if start:
 
 st.write("---")
 
-# LOGOS CENTERED
-center_row = st.columns([1,2,1])
-with center_row[1]:
-    logos = st.columns([1,1])
+from streamlit.components.v1 import html
 
-    with logos[0]:
-        if os.path.exists("AMI_app/static/university_logo.png"):
-            st.image("AMI_app/static/university_logo.png")
+html("""
+<div style="
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 60px; 
+    margin-top: 40px;
+">
+    <img src="AMI_app/static/university_logo.png" 
+         style="width:130px; border-radius:10px;">
 
-    with logos[1]:
-        if os.path.exists("AMI_app/static/ami_logo.png"):
-            st.image("AMI_app/static/ami_logo.png")
+    <img src="AMI_app/static/ami_logo.png" 
+         style="width:130px; border-radius:10px;">
+</div>
+""", height=200)
 
 st.markdown(
     "<p style='text-align:center; color:#bbb;'>© AMI — Ameen Medical Intelligence.</p>",
