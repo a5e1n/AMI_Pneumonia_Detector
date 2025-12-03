@@ -30,16 +30,15 @@ st.markdown("""
 <div style='display:flex; justify-content:center; gap:70px; margin-top:20px;'>
 
     <img src='AMI_app/static/university_logo.png' 
-         width='130' 
+         width='130'
          style='border-radius:8px;'>
 
     <img src='AMI_app/static/ami_logo.png' 
-         width='130' 
+         width='130'
          style='border-radius:8px;'>
 
 </div>
 """, unsafe_allow_html=True)
-
 
 st.markdown(
     "<p style='text-align:center; color:#bbb;'>© AMI — Ameen Medical Intelligence.</p>",
