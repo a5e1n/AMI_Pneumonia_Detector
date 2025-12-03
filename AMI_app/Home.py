@@ -26,18 +26,20 @@ if start:
 
 st.write("---")
 
-# LOGOS CENTERED
-center_row = st.columns([1,2,1])
-with center_row[1]:
-    logos = st.columns([1,1])
+# LOGOS CENTERED (HTML — perfect size & quality)
+st.markdown("""
+    <div style='display:flex; justify-content:center; align-items:center; gap:50px; margin-top:20px;'>
+        
+        <!-- University Logo -->
+        <img src='AMI_app/static/university_logo.png' 
+             style='width:130px; height:auto; border-radius:10px;' />
 
-    with logos[0]:
-        if os.path.exists("AMI_app/static/university_logo.png"):
-            st.image("AMI_app/static/university_logo.png")
+        <!-- AMI Logo -->
+        <img src='AMI_app/static/ami_logo.png' 
+             style='width:130px; height:auto; border-radius:10px;' />
 
-    with logos[1]:
-        if os.path.exists("AMI_app/static/ami_logo.png"):
-            st.image("AMI_app/static/ami_logo.png")
+    </div>
+""", unsafe_allow_html=True)
 
 st.markdown(
     "<p style='text-align:center; color:#bbb;'>© AMI — Ameen Medical Intelligence.</p>",
