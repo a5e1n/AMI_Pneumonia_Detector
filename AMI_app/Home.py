@@ -26,20 +26,23 @@ if start:
 
 st.write("---")
 
-# LOGOS CENTERED (HTML — perfect size & quality)
-st.markdown("""
+st.markdown(
+    """
     <div style='display:flex; justify-content:center; align-items:center; gap:50px; margin-top:20px;'>
-        
+
         <!-- University Logo -->
-        <img src='AMI_app/static/university_logo.png' 
+        <img src='AMI_app/static/university_logo.png'
              style='width:130px; height:auto; border-radius:10px;' />
 
         <!-- AMI Logo -->
-        <img src='AMI_app/static/ami_logo.png' 
+        <img src='AMI_app/static/ami_logo.png'
              style='width:130px; height:auto; border-radius:10px;' />
 
     </div>
-""", unsafe_allow_html=True)
+    """,
+    unsafe_allow_html=True
+)
+
 
 st.markdown(
     "<p style='text-align:center; color:#bbb;'>© AMI — Ameen Medical Intelligence.</p>",
