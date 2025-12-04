@@ -19,7 +19,7 @@ st.write("---")
 #       STEP 1
 # ============================
 st.markdown("""
-### 🩻 **1. Image Upload**
+### **1. Image Upload**
 The user uploads a **chest X-ray image** (JPG, JPEG, PNG).  
 The system checks file validity and ensures it is safe to process.
 """)
@@ -139,7 +139,7 @@ This PDF is fully ready for hospital use or clinical review.
 #       STEP 8
 # ============================
 st.markdown("""
-### 🏥 **8. Future PACS & DICOM Integration**
+### **8. Future PACS & DICOM Integration**
 The system is designed for future compatibility with:
 
 - PACS hospital systems  
