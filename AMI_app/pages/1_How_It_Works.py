@@ -61,7 +61,7 @@ The output includes:
 #       STEP 4 – Grad-CAM
 # ============================
 st.markdown("""
-### 🔥 **4. Grad-CAM Visualization (How the AI “Sees” the X-ray)**
+### **4. Grad-CAM Visualization (How the AI “Sees” the X-ray)**
 
 Grad-CAM is an explainability technique that shows **where the AI focused** when making its decision.
 
@@ -120,7 +120,7 @@ These suggestions help the user understand the next medical step.
 #       STEP 7
 # ============================
 st.markdown("""
-### 📄 **7. Automatic PDF Report Generation**
+### **7. Automatic PDF Report Generation**
 AMI generates a **professional medical-style PDF**, including:
 
 - Patient ID  
