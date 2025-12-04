@@ -84,8 +84,7 @@ with center:
                     unsafe_allow_html=True)
 
         st.image(
-            IMAGE_PATH,
-            width=360,     # 🔥 التكبير + تحسين الوضوح
+            IMAGE_PATH,  
             caption="Ameen Ali",
             output_format="PNG"
         )
@@ -180,7 +179,7 @@ st.markdown("""
 <div class="glass-box">
     <div class="glass-title">✨ Independently Developed by Ameen Ali</div>
     <div class="glass-text">
-        This project was entirely designed, engineered, and built by Ameen Ali — 
+        This project was entirely designed, engineered, and built by Ameen Ali  
         Founder & Lead Developer of AMI (Ameen Medical Intelligence).  
         <br><br>
         It represents a fully independent end-to-end effort:  
