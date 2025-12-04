@@ -28,7 +28,7 @@ The system checks file validity and ensures it is safe to process.
 #       STEP 2
 # ============================
 st.markdown("""
-### 🧹 **2. Pre-Processing**
+### **2. Pre-Processing**
 Before sending the image to the AI model, the system performs essential steps:
 
 - Converts the image to **RGB format**
@@ -43,7 +43,7 @@ These steps make the input clean and standardized for best model performance.
 #       STEP 3
 # ============================
 st.markdown("""
-### 🧠 **3. Deep Learning Model Prediction**
+### **3. Deep Learning Model Prediction**
 The system uses a **MobileNetV2-based CNN**, fine-tuned on medical X-ray datasets.
 
 The model predicts **one of three classes**:
@@ -87,7 +87,7 @@ Grad-CAM adds **transparency** and makes the AI decision **clinically interpreta
 #       STEP 5
 # ============================
 st.markdown("""
-### 🧪 **5. Diagnosis Card Rendering**
+### **5. Diagnosis Card Rendering**
 Based on the model’s result:
 
 - Green glowing card → **NORMAL**
@@ -106,7 +106,7 @@ This makes the result easy to read and understand instantly.
 #       STEP 6
 # ============================
 st.markdown("""
-### 📋 **6. Medical Recommendations**
+### **6. Medical Recommendations**
 Depending on the diagnosis, the system provides medical guidance:
 
 - For pneumonia → seek medical evaluation, consider CT scan, monitor symptoms  
